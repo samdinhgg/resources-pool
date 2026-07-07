@@ -1,0 +1,5 @@
+- YARA Rule:
+- TTP: Tactics, Techniques, Procedures
+- RTO:
+- RPO:
+- IR: Incident Response
