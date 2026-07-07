@@ -1,0 +1,1 @@
+- https://partnerportal.broadcom.com/web/partner-portal

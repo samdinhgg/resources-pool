@@ -1,0 +1,1 @@
+- [partner.suse.com](https://partner.suse.com/s/)
