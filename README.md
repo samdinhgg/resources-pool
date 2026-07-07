@@ -25,3 +25,11 @@ Structure:
 - [suse](03-resources/suse/README.md)
 - [veeam](03-resources/veeam/README.md)
 
+## Vault - PKB
+
+Graph:
+
+![Obsidian In Action](docs/images/obsidian.png)
+Path:
+
+![A Google Skills Path](docs/images/obsidian01.png)
