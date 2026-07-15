@@ -31,11 +31,11 @@
   stack(
     block(
       width: 100%,
-      height: 2em,
+      height: 2.5em,
       stroke: 0.5pt + blue.lighten(20%),
       // fill: blue,
       radius: (top-left: 10pt, top-right: 10pt),
-      inset: 0.5em,
+      inset: 0.8em,
       grid(
         columns: (1fr, 1fr, auto),
         [#title],
@@ -48,7 +48,7 @@
     block(
     width: 100%,
     // stroke: 1pt + orange,
-    inset: 1em,
+    inset: 2em,
     stack(
         // text(size: 1.6em, weight: "bold")[#title],
         // v(0.6em),
