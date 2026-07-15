@@ -19,7 +19,7 @@
 #show link: set text(fill: blue, weight: 700)
 #show link: underline
 
-#let gebox(url, body) = block(
+#let gebox(title, message) = block(
   width: 100%,
   stroke: (
     bottom: 4pt + blue.lighten(20%),
@@ -27,17 +27,21 @@
   inset: 10pt,
   radius: 10pt,
   stack(
-      text(size: 1.6em, weight: "bold")[#url],
+      text(size: 1.6em, weight: "bold")[#title],
       v(0.6em),
-      line(stroke: 0.1pt + blue.lighten(40%), length: 100%),
+      line(stroke: (
+          paint: blue.lighten(80%),
+          thickness: 0.5pt,
+          cap: "round"),
+        length: 100%),
       v(1.6em),
-      [#body]
+      [#message]
     )
   )
 
 #gebox([Gemini Enterprise --- An Introduction])[
 
-*Gemini Enterprise app brings the best of Google AI to every employee*
+*Gemini Enterprise app brings the best of Google AI to every employee*.
 
 - *Securely connect* to Microsoft 365, Google Workspace, and *more*.
 - Agents that *automate multi-step, multi-app* workflows.
