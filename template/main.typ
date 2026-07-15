@@ -23,22 +23,37 @@
 #let gebox(title, message) = block(
   width: 100%,
   stroke: (
-    bottom: 4pt + blue.lighten(20%),
-    rest: 0.5pt + blue.lighten(20%)),
-  inset: 10pt,
+  bottom: 4pt + blue.lighten(20%),
+  rest: 0.5pt + blue.lighten(20%)
+  ),
   radius: 10pt,
   stack(
-      text(size: 1.6em, weight: "bold")[#title],
-      v(0.6em),
-      line(stroke: (
-          paint: blue.lighten(80%),
-          thickness: 0.5pt,
-          cap: "round"),
-        length: 100%),
-      v(1.6em),
-      [#message]
+    block(
+      width: 100%,
+      height: 2em,
+      stroke: 0.5pt + blue.lighten(20%),
+      // fill: blue,
+      radius: (top-left: 10pt, top-right: 10pt),
+
+    ),
+    block(
+    width: 100%,
+    // stroke: 1pt + orange,
+    inset: 10pt,
+    stack(
+        text(size: 1.6em, weight: "bold")[#title],
+        v(0.6em),
+        line(stroke: (
+            paint: blue.lighten(80%),
+            thickness: 0.5pt,
+            cap: "round"),
+          length: 100%),
+        v(1.6em),
+        [#message]
+      )
     )
   )
+)
 
 #gebox([Gemini Enterprise --- An Introduction])[
 
