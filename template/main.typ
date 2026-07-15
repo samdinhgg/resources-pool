@@ -29,7 +29,7 @@
   stack(
       text(size: 1.6em, weight: "bold")[#url],
       v(0.6em),
-      line(stroke: 0.1pt + blue, length: 100%),
+      line(stroke: 0.1pt + blue.lighten(40%), length: 100%),
       v(1.6em),
       [#body]
     )
