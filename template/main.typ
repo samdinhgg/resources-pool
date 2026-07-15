@@ -19,8 +19,7 @@
 #show link: set text(fill: blue, weight: 700)
 #show link: underline
 
-#import "@preview/tiaoma:0.3.0"
-#let next-step(url, body) = block(
+#let gebox(url, body) = block(
   width: 100%,
   stroke: (
     bottom: 4pt + blue.lighten(20%),
@@ -36,11 +35,7 @@
     )
   )
 
-// #next-step(heading(level: 1)[Gemini Enterprise --- An Introduction])[
-// Welcome to the Typst Playground! This is a sandbox where you can experiment with Typst. You can type anywhere in the editor panel on the left. The preview panel to the right will update live.
-// ]
-
-#next-step([Gemini Enterprise --- An Introduction])[
+#gebox([Gemini Enterprise --- An Introduction])[
 
 *Gemini Enterprise app brings the best of Google AI to every employee*
 
