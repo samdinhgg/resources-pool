@@ -1,4 +1,5 @@
 #set page(paper: "a5", flipped: true,
+  margin: 1em,
   // header: context {
   //   grid(
   //     columns: (1fr, 1fr, auto),
