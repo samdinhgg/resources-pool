@@ -40,7 +40,7 @@
       grid(
         columns: (auto,1fr, 1fr, auto),
         column-gutter: 0.4em,
-        [ #if gemini_icon_uri != none {image(gemini_icon_uri, height: auto)}],
+        [ #if gemini_icon_uri != none {image(gemini_icon_uri, height: 88%)}],
         [#title],
         [#topic],
         align(right)[
