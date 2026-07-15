@@ -20,6 +20,7 @@
 
 #show link: set text(fill: blue, weight: 700)
 #show link: underline
+#let gemini_icon_uri = "images/gemini-icon-01.png"
 
 #let gebox(title, topic, message) = block(
   width: 100%,
@@ -37,7 +38,9 @@
       radius: (top-left: 10pt, top-right: 10pt),
       inset: 0.8em,
       grid(
-        columns: (1fr, 1fr, auto),
+        columns: (auto,1fr, 1fr, auto),
+        column-gutter: 0.4em,
+        [ #if gemini_icon_uri != none {image(gemini_icon_uri, height: auto)}],
         [#title],
         [#topic],
         align(right)[
