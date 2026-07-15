@@ -1,3 +1,4 @@
+#import "@preview/fontawesome:0.6.2": *
 #set page(paper: "a5", flipped: true,
   margin: (left: 0.4em, right: 0.4em),
   // header: context {
@@ -40,14 +41,14 @@
         [#title],
         [#topic],
         align(right)[
-          -- #sym.square.stroked.medium x
+          #fa-icon("window-minimize", solid: false ) #fa-icon("window-maximize") #fa-icon("window-close")
         ]
       )
     ),
     block(
     width: 100%,
     // stroke: 1pt + orange,
-    inset: 10pt,
+    inset: 1em,
     stack(
         // text(size: 1.6em, weight: "bold")[#title],
         // v(0.6em),
