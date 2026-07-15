@@ -1,5 +1,5 @@
 #set page(paper: "a5", flipped: true,
-  margin: 1em,
+  margin: 2em,
   // header: context {
   //   grid(
   //     columns: (1fr, 1fr, auto),
@@ -49,6 +49,6 @@
 - You *control your data*.
 
 #align(center)[
-  #image("images/ge-01.png", height: 60%)
+  #image("images/ge-01.png", height: 66%)
   ]
 ]
