@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="Definitions_1aakcyz" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="aeb6083" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.9.0">
   <bpmn:collaboration id="Collaboration_1hi28kj">
-    <bpmn:participant id="Participant_15ib37v" name="Marketing Manger" processRef="Process_1kkgqzx" />
+    <bpmn:participant id="Participant_15ib37v" name="Marketing Manager" processRef="Process_1kkgqzx" />
     <bpmn:participant id="Participant_1kdn6tu" name="Gemini Enterprise" processRef="Process_12k6s55" />
     <bpmn:messageFlow id="Flow_1kh1kuk" sourceRef="Activity_1fxcugd" targetRef="Event_1xceyno" />
     <bpmn:messageFlow id="Flow_1hk9v87" sourceRef="Activity_02laoh5" targetRef="Event_1mc55vj" />
@@ -37,7 +37,7 @@
     <bpmn:dataStoreReference id="DataStoreReference_0uwbw78" name="GCS" />
     <bpmn:dataStoreReference id="DataStoreReference_014qve0" name="Sharepoint" />
     <bpmn:dataStoreReference id="DataStoreReference_11uk9ak" name="GDrive" />
-    <bpmn:startEvent id="Event_1ksay0m" name="Marketing campain requested">
+    <bpmn:startEvent id="Event_1ksay0m" name="Marketing campaign requested">
       <bpmn:outgoing>Flow_0lssglb</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:task id="Activity_1fxcugd" name="Research sale performance and market trends">
@@ -52,7 +52,7 @@
       <bpmn:outgoing>Flow_158l6bh</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_03kiyjo" />
     </bpmn:intermediateCatchEvent>
-    <bpmn:dataObjectReference id="DataObjectReference_0ocx4s6" name="Context and reuirements" dataObjectRef="DataObject_0x3rfmy" />
+    <bpmn:dataObjectReference id="DataObjectReference_0ocx4s6" name="Context and requirements" dataObjectRef="DataObject_0x3rfmy" />
     <bpmn:dataObject id="DataObject_0x3rfmy" />
     <bpmn:task id="Activity_0zzkd5c" name="Check inventory">
       <bpmn:incoming>Flow_158l6bh</bpmn:incoming>
@@ -146,7 +146,7 @@
         <bpmn:targetRef>DataObjectReference_1nygxe7</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
     </bpmn:task>
-    <bpmn:endEvent id="Event_1in8sr1" name="Caimpaign plan delivered">
+    <bpmn:endEvent id="Event_1in8sr1" name="Campaign plan delivered">
       <bpmn:incoming>Flow_0ybvfod</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_0lssglb" sourceRef="Event_1ksay0m" targetRef="Activity_1fxcugd" />
